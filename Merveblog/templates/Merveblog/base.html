@@ -1,0 +1,46 @@
+{% load static %}
+<html>
+    <head>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"> <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/benim.css' %}">
+        <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
+    <head> 
+<body>
+   <div class="page-header">
+        <h1><a href="/">Merve Website</a></h1>        
+    </div>
+    <div class="content container">
+        <div class="row">
+            <div class="col-md-8">
+            {% block content %}
+            {% endblock %}
+            </div>
+        </div>
+    </div>
+<img src="{% static 'C:\Users\merve\Desktop\django_yenii\MerveDjango\Merveblog\templates\Merveblog\static\future-digital-mapping.png' %} ">
+
+
+    <form action="/your-name/" method="post">
+    <label for="your_name">Your name: </label>
+    <input id="your_name" type="text" name="your_name" value="{{ current_name }}">
+    <input type="submit" value="OK">
+</form>
+    <form action="/latitude/" method="post">
+    <label for="latitude">Latitude: </label>
+    <input id="latitude" type="number" name="latitude" value="{{ current_name }}">
+    <input type="submit" value="OK">
+</form>
+    <form action="/longitude/" method="post">
+    <label for="longitude">Longitude: </label>
+    <input id="longitude" type="number" name="longitude" value="{{ current_name }}">
+    <input type="submit" value="OK">
+</form> 
+    <form action="/Height/" method="post">
+    <label for="Height">Height: </label>
+    <input id="Height" type="number" name="Height" value="{{ current_name }}">
+    <input type="submit" value="OK">
+</form> 
+</body>
+
+</html>
